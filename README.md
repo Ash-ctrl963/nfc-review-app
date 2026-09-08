@@ -9,7 +9,7 @@ Ratings of 1–3 stars end with a private thank-you message; nothing is stored.
 
 ## Status
 
-🚧 Under active development, built in stages. Currently: **Stage 1 — project
+ Under active development, built in stages. Currently: **Stage 1 — project
 setup complete.**
 
 ## Tech Stack
@@ -97,12 +97,12 @@ plan (Section 15 of the spec).
 
 ## Stages
 
-1. ✅ Project setup and architecture
-2. ✅ Mobile review interface
-3. ✅ Rating logic
-4. ✅ Backend/API
-5. ✅ Database
-6. ✅ AI review generation
+1.  Project setup and architecture
+2.  Mobile review interface
+3.  Rating logic
+4.  Backend/API
+5.  Database
+6.  AI review generation
 7. Validation/security/error handling
 8. Event tracking/testing view
 9. Deployment prep
