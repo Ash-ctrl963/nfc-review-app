@@ -40,18 +40,6 @@ and `lib/reviewPolicy.ts` for the isolated rating-routing logic.
 
 **Requirements:** Node.js 18.18+ (or 20+), npm.
 
-```bash
-# 1. Install dependencies
-npm install
-
-# 2. Copy env template and fill in real values
-cp .env.example .env.local
-# then edit .env.local — see "Environment Variables" below
-
-# 3. Run the dev server
-npm run dev
-# visit http://localhost:3000/review
-```
 
 ## Environment Variables
 
@@ -67,33 +55,7 @@ you need:
   is optional and defaults to `gemini-flash-latest` (an alias Google keeps
   pointed at a current, non-deprecated Flash model).
 
-## Database Setup
 
-1. Create a free project at [supabase.com](https://supabase.com).
-2. In the project dashboard, go to **SQL Editor -> New query**, paste the
-   contents of `supabase/schema.sql`, and run it. This creates the single
-   `events` table (no other tables — see Section 9 of the project spec).
-3. Go to **Project Settings -> API** and copy:
-   - **Project URL** -> `SUPABASE_URL` (if you already have this saved as
-     `NEXT_PUBLIC_SUPABASE_URL` from Supabase's own quickstart, that name
-     works too - no need to duplicate it)
-   - **service_role key** (not the `anon`/publishable key — this app uses
-     the service-role key server-side only, and Row Level Security is
-     enabled with no policies, so the anon/publishable key would have
-     zero access anyway) -> `SUPABASE_SERVICE_ROLE_KEY`
-4. Paste both into `.env.local`.
-
-Never commit `.env.local` — it's already in `.gitignore`.
-
-## Running Tests
-
-```bash
-npm run test
-```
-
-Stage 1 includes one test file (`tests/reviewPolicy.test.ts`) covering the
-rating-routing module. More are added per-stage per the project's testing
-plan (Section 15 of the spec).
 
 ## Stages
 
