@@ -1,4 +1,4 @@
-# NFC + QR Customer Review App 
+NFC/QR Customer Review App (AI suggested reviews)
 
 A single-business prototype: customers tap an NFC tag or scan a QR code near
 the billing counter, rate their experience 1–5 stars, and — for 4–5 star
@@ -6,11 +6,6 @@ ratings only — get AI-assisted help drafting a genuine Google review based on
 their own words, then get redirected to leave it publicly.
 
 Ratings of 1–3 stars end with a private thank-you message; nothing is stored.
-
-## Status
-
- Under active development, built in stages. Currently: **Stage 1 — project
-setup complete.**
 
 ## Tech Stack
 
@@ -41,7 +36,7 @@ and `lib/reviewPolicy.ts` for the isolated rating-routing logic.
 **Requirements:** Node.js 18.18+ (or 20+), npm.
 
 
-## Environment Variables
+Environment Variables
 
 All variables are documented in `.env.example`. At minimum, for local dev
 you need:
@@ -57,7 +52,7 @@ you need:
 
 
 
-## Stages
+ Stages
 
 1.  Project setup and architecture
 2.  Mobile review interface
@@ -69,7 +64,4 @@ you need:
 8. Event tracking/testing view
 9. Deployment prep
 
-## Deployment / NFC / QR
 
-Instructions for deployment, NFC tag programming, and QR code generation
-are added in Stage 9, once the app is feature-complete.
