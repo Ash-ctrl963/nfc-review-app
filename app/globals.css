@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+}
+
+/* Visible focus states for accessibility (Section 12). */
+:focus-visible {
+  outline: 2px solid #c98a2c;
+  outline-offset: 2px;
+}
+
+/* Respect reduced-motion preference: disable the two deliberate
+   animations (card entrance, star pulse) for anyone who has asked
+   their system to minimize motion. */
+@media (prefers-reduced-motion: reduce) {
+  .animate-card-rise,
+  .animate-star-pulse {
+    animation: none !important;
+  }
+}
