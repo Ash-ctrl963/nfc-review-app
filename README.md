@@ -1,4 +1,4 @@
-# NFC + QR Customer Review App (CSE Major Project)
+# NFC + QR Customer Review App 
 
 A single-business prototype: customers tap an NFC tag or scan a QR code near
 the billing counter, rate their experience 1–5 stars, and — for 4–5 star
